@@ -18,12 +18,12 @@ import java.time.LocalDateTime;
 public class User {
     @Id
     private Long id;
-    @ManyToOne // multiple users for one category
+    @ManyToOne // many users for one category
     private UserCategory userCategory;
     private String name;
-    @ManyToOne // multiple users for one company
+    @ManyToOne // many users for one company
     private Company company;
-    @ManyToOne //multiple users for one access level
+    @ManyToOne // many users for one access level
     private AccessLevel accessLevel;
     @ManyToOne
     private WorkingDay workingDay;

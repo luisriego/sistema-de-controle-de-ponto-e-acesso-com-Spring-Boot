@@ -16,7 +16,7 @@ import javax.persistence.ManyToOne;
 public class Location {
     @Id
     private Long id;
-    @ManyToOne // several locations have access level
+    @ManyToOne // many locations have access level
     private AccessLevel accessLevel;
     private String description;
 }

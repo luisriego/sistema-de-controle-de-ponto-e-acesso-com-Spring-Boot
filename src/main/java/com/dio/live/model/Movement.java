@@ -32,9 +32,9 @@ public class Movement {
     private LocalDateTime entryDate;
     private LocalDateTime exitDate;
     private BigDecimal period;
-    @ManyToOne
+    @ManyToOne // many movements for one occorrence
     private Occurrence occurrence;
-    @ManyToOne
+    @ManyToOne // many movements for one calendar
     private Calendar calendar;
 
 
